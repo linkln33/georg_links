@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ChevronDown, Play, Code, Terminal } from "lucide-react"
 
@@ -76,9 +77,11 @@ export const Hero = () => {
                   Georg Links
                 </h1>
                 <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden border-2 border-neon-cyan shadow-lg">
-                  <img 
+                  <Image 
                     src="/george.jpeg" 
                     alt="Georg Links" 
+                    width={96}
+                    height={96}
                     className="w-full h-full object-cover"
                   />
                 </div>
