@@ -117,10 +117,10 @@ export const Contact = () => {
           className="text-center mb-12 lg:mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 bg-gradient-to-r from-neon-cyan to-neon-pink bg-clip-text text-transparent">
-            Let's Build Together
+            Let&apos;s Build Together
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
-            Ready to bring your Web3 vision to life? Let's discuss your project and create something amazing.
+            Ready to bring your Web3 vision to life? Let&apos;s discuss your project and create something amazing.
           </p>
         </motion.div>
 
@@ -145,7 +145,7 @@ export const Contact = () => {
                   <div className="space-y-6 flex-1 flex flex-col">
                     <div className="text-center">
                       <p className="text-sm text-muted-foreground mb-4">
-                        Have a Web3 project in mind? Fill out the form below and I'll get back to you within 24 hours with a detailed proposal.
+                        Have a Web3 project in mind? Fill out the form below and I&apos;ll get back to you within 24 hours with a detailed proposal.
                       </p>
                     </div>
                     
@@ -274,7 +274,7 @@ export const Contact = () => {
                           Message Sent!
                         </h3>
                         <p className="text-sm text-muted-foreground">
-                          Thanks for reaching out! I'll get back to you within 24 hours.
+                          Thanks for reaching out! I&apos;ll get back to you within 24 hours.
                         </p>
                       </motion.div>
                     )}
@@ -308,7 +308,7 @@ export const Contact = () => {
                         </Badge>
                       </div>
                       <p className="text-sm text-muted-foreground mb-4">
-                        Ready to discuss your Web3 project? Let's schedule a discovery call to explore how I can help bring your vision to life.
+                        Ready to discuss your Web3 project? Let&apos;s schedule a discovery call to explore how I can help bring your vision to life.
                       </p>
                     </div>
                     

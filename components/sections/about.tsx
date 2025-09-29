@@ -84,18 +84,18 @@ export const About = () => {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 With over 5 years of experience in blockchain development, I specialize in creating 
                 <span className="text-neon-cyan font-semibold"> production-ready decentralized applications</span> 
-                that push the boundaries of what's possible in Web3.
+                that push the boundaries of what&apos;s possible in Web3.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
                 My expertise spans across multiple blockchain ecosystems, from 
                 <span className="text-neon-green font-semibold"> Ethereum and Solana</span> to emerging 
                 platforms like <span className="text-neon-pink font-semibold">Sui and Aptos</span>. 
-                I'm passionate about building secure, scalable solutions that deliver real value to users.
+                I&apos;m passionate about building secure, scalable solutions that deliver real value to users.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not coding smart contracts, you'll find me exploring the intersection of 
+                When I&apos;m not coding smart contracts, you&apos;ll find me exploring the intersection of 
                 <span className="text-neon-purple font-semibold"> AI and blockchain technology</span>, 
                 always looking for innovative ways to enhance user experiences and create more 
                 intelligent decentralized systems.
