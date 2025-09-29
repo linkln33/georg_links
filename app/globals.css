@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --background: 220 13% 5%;
+  --foreground: 210 40% 98%;
+  --card: 220 13% 8%;
+  --card-foreground: 210 40% 98%;
+  --popover: 220 13% 8%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 197 100% 50%;
+  --primary-foreground: 220 13% 5%;
+  --secondary: 140 100% 60%;
+  --secondary-foreground: 220 13% 5%;
+  --muted: 220 13% 15%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 180 100% 50%;
+  --accent-foreground: 220 13% 5%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 220 13% 20%;
+  --input: 220 13% 20%;
+  --ring: 197 100% 50%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #00D4FF, #00FF88);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #00FFFF, #FF00FF);
+}
+
+/* Glow effects */
+.glow-blue {
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.glow-green {
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.glow-pink {
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(128, 0, 255, 0.5);
+}
+
+/* Grid background */
+.grid-bg {
+  background-image: 
+    linear-gradient(rgba(0, 212, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Terminal styling */
+.terminal {
+  font-family: 'JetBrains Mono', monospace;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+/* Typing animation */
+.typing-text {
+  overflow: hidden;
+  border-right: 2px solid #00D4FF;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00D4FF }
+}
+
+/* Button gradients */
+.btn-gradient {
+  background: linear-gradient(135deg, #00D4FF, #00FF88);
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #00FFFF, #FF00FF);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 212, 255, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+}
+
+/* Progress bar animations */
+@keyframes progress-fill {
+  from { width: 0% }
+  to { width: var(--progress-width) }
+}
+
+.progress-bar {
+  animation: progress-fill 2s ease-in-out forwards;
+}

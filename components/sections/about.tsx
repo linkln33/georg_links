@@ -1,0 +1,198 @@
+"use client"
+
+import { motion } from "framer-motion"
+import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { 
+  Code, 
+  Coins, 
+  Gamepad2, 
+  Palette, 
+  Zap,
+  Award,
+  Globe,
+  Users
+} from "lucide-react"
+
+const highlights = [
+  {
+    icon: Code,
+    title: "Smart Contract Expert",
+    description: "Architecting secure, gas-optimized contracts across multiple blockchains",
+    color: "text-neon-blue"
+  },
+  {
+    icon: Coins,
+    title: "DeFi Specialist",
+    description: "Building yield farming, AMMs, and advanced financial protocols",
+    color: "text-neon-green"
+  },
+  {
+    icon: Gamepad2,
+    title: "GameFi Developer",
+    description: "Creating immersive blockchain games with player-owned economies",
+    color: "text-neon-pink"
+  },
+  {
+    icon: Palette,
+    title: "UI/UX Designer",
+    description: "Crafting beautiful, intuitive interfaces that users love",
+    color: "text-neon-cyan"
+  }
+]
+
+const achievements = [
+  { icon: Award, text: "Top 1% Blockchain Developer", color: "text-neon-blue" },
+  { icon: Globe, text: "50+ Deployed Smart Contracts", color: "text-neon-green" },
+  { icon: Users, text: "10M+ Users Served", color: "text-neon-pink" },
+  { icon: Zap, text: "$100M+ TVL Managed", color: "text-neon-cyan" }
+]
+
+export const About = () => {
+  return (
+    <section id="about" className="pt-16 lg:pt-20 pb-20 relative">
+      <div className="container mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-neon-blue to-neon-green bg-clip-text text-transparent">
+            About Me
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Passionate about building the future of decentralized technology with clean code and innovative solutions
+          </p>
+        </motion.div>
+
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Left Column - Professional Summary */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            <div className="space-y-4">
+              <h3 className="text-2xl font-semibold text-neon-blue">
+                Full Stack Web3 Developer
+              </h3>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                With over 5 years of experience in blockchain development, I specialize in creating 
+                <span className="text-neon-cyan font-semibold"> production-ready decentralized applications</span> 
+                that push the boundaries of what's possible in Web3.
+              </p>
+
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                My expertise spans across multiple blockchain ecosystems, from 
+                <span className="text-neon-green font-semibold"> Ethereum and Solana</span> to emerging 
+                platforms like <span className="text-neon-pink font-semibold">Sui and Aptos</span>. 
+                I'm passionate about building secure, scalable solutions that deliver real value to users.
+              </p>
+
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                When I'm not coding smart contracts, you'll find me exploring the intersection of 
+                <span className="text-neon-purple font-semibold"> AI and blockchain technology</span>, 
+                always looking for innovative ways to enhance user experiences and create more 
+                intelligent decentralized systems.
+              </p>
+            </div>
+
+            {/* Key Technologies */}
+            <div className="space-y-3">
+              <h4 className="text-lg font-semibold text-foreground">Core Technologies</h4>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "Move", "Solidity", "Rust", "TypeScript", "React", "Next.js", 
+                  "Node.js", "Python", "Sui", "Aptos", "Ethereum", "Solana"
+                ].map((tech) => (
+                  <Badge 
+                    key={tech} 
+                    variant="outline" 
+                    className="border-neon-blue/50 text-neon-blue hover:bg-neon-blue/10"
+                  >
+                    {tech}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Right Column - Highlights */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            {highlights.map((highlight, index) => (
+              <motion.div
+                key={highlight.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Card className="card-hover group">
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className={`p-3 rounded-lg bg-card border border-current/20 group-hover:scale-110 transition-transform ${highlight.color}`}>
+                        <highlight.icon className="w-6 h-6" />
+                      </div>
+                      <div className="space-y-2">
+                        <h4 className="text-lg font-semibold text-foreground">
+                          {highlight.title}
+                        </h4>
+                        <p className="text-muted-foreground">
+                          {highlight.description}
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+
+        {/* Achievements Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <h3 className="text-2xl font-semibold mb-8 text-neon-purple">
+            Key Achievements
+          </h3>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {achievements.map((achievement, index) => (
+              <motion.div
+                key={achievement.text}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="text-center space-y-3"
+              >
+                <div className={`w-16 h-16 mx-auto rounded-full border-2 border-current/20 flex items-center justify-center group-hover:scale-110 transition-transform ${achievement.color}`}>
+                  <achievement.icon className="w-8 h-8" />
+                </div>
+                <p className="text-sm font-medium text-muted-foreground">
+                  {achievement.text}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  )
+}
