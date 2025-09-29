@@ -58,6 +58,18 @@ module.exports = {
           pink: "#FF00FF",
           purple: "#8000FF",
         },
+        // Electric colors for skills
+        electric: {
+          red: "#FF0040",
+          orange: "#FF4500", 
+          yellow: "#FFFF00",
+          green: "#00FF41",
+          cyan: "#00FFFF",
+          blue: "#0080FF",
+          indigo: "#4000FF",
+          purple: "#8000FF",
+          pink: "#FF0080",
+        },
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],

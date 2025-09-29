@@ -6,14 +6,14 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const skillsData = [
-  { name: "Move", level: 100, color: "from-red-500 to-orange-500" },
-  { name: "TypeScript / JavaScript", level: 95, color: "from-orange-500 to-yellow-500" },
-  { name: "React / Next.js", level: 95, color: "from-yellow-500 to-green-500" },
-  { name: "Solidity", level: 90, color: "from-green-500 to-cyan-500" },
-  { name: "UI/UX", level: 90, color: "from-cyan-500 to-blue-500" },
-  { name: "Rust", level: 85, color: "from-blue-500 to-indigo-500" },
-  { name: "Game Dev", level: 80, color: "from-indigo-500 to-purple-500" },
-  { name: "AI for Web3", level: 75, color: "from-purple-500 to-pink-500" },
+  { name: "Move", level: 100, color: "from-electric-red to-electric-orange" },
+  { name: "TypeScript / JavaScript", level: 95, color: "from-electric-orange to-electric-yellow" },
+  { name: "React / Next.js", level: 95, color: "from-electric-yellow to-electric-green" },
+  { name: "Solidity", level: 90, color: "from-electric-green to-electric-cyan" },
+  { name: "UI/UX", level: 90, color: "from-electric-cyan to-electric-blue" },
+  { name: "Rust", level: 85, color: "from-electric-blue to-electric-indigo" },
+  { name: "Game Dev", level: 80, color: "from-electric-indigo to-electric-purple" },
+  { name: "AI for Web3", level: 75, color: "from-electric-purple to-electric-pink" },
 ]
 
 export const projectsData = [
