@@ -10,11 +10,6 @@ export const metadata: Metadata = {
   keywords: ['Web3 Developer', 'Solidity', 'Rust', 'Move', 'Blockchain', 'Smart Contracts', 'DeFi', 'Full Stack Developer'],
   authors: [{ name: 'Georg Links' }],
   robots: 'index, follow',
-  icons: {
-    icon: '/george.jpeg',
-    shortcut: '/george.jpeg',
-    apple: '/george.jpeg',
-  },
   openGraph: {
     type: 'website',
     locale: 'en_US',

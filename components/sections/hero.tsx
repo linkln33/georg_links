@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ChevronDown, Play, Code, Terminal } from "lucide-react"
 
@@ -72,20 +71,9 @@ export const Hero = () => {
               <p className="text-neon-green text-base sm:text-lg font-medium">
                 👋 Hello, I&apos;m
               </p>
-              <div className="flex items-center justify-center lg:justify-start gap-4">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-green bg-clip-text text-transparent leading-tight lg:leading-relaxed py-1 lg:py-2">
-                  Georg Links
-                </h1>
-                <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden border-2 border-neon-cyan shadow-lg">
-                  <Image 
-                    src="/george.jpeg" 
-                    alt="Georg Links" 
-                    width={96}
-                    height={96}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-green bg-clip-text text-transparent leading-tight lg:leading-relaxed py-1 lg:py-2">
+                Georg Links
+              </h1>
               <div className="mt-8 lg:mt-16">
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-neon-purple">
                   Full Stack Web3 Developer
@@ -163,7 +151,7 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative mt-8 lg:mt-0"
           >
-            <div className="terminal p-4 sm:p-6 relative overflow-hidden">
+            <div className="terminal p-4 sm:p-6 relative overflow-hidden min-w-[300px] w-full max-w-[500px]">
               {/* Terminal Header */}
               <div className="flex items-center gap-2 mb-4 pb-3 border-b border-neon-blue/20">
                 <div className="flex gap-2">
@@ -192,9 +180,7 @@ export const Hero = () => {
                       .replace(/developer/g, '<span class="text-neon-yellow">$&</span>')
                       .replace(/true|false/g, '<span class="text-neon-orange">$&</span>')
                   }} />
-                  {showCursor && currentIndex >= codeSnippet.length && (
-                    <span className="inline-block w-2 h-5 bg-neon-blue ml-1 animate-pulse"></span>
-                  )}
+                  <span className={`inline-block w-2 h-5 ml-1 ${showCursor && currentIndex >= codeSnippet.length ? 'bg-neon-blue animate-pulse' : 'bg-transparent'}`}></span>
                 </pre>
               </div>
 
