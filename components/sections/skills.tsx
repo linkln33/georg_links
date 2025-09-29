@@ -38,32 +38,12 @@ const SkillProgress = ({ skill, index }: SkillProgressProps) => {
             whileInView={{ width: `${skill.level}%` }}
             transition={{ duration: 1.5, delay: index * 0.1 + 0.3, ease: "easeOut" }}
             viewport={{ once: true }}
-            className={`h-full bg-gradient-to-r ${skill.color} rounded-full relative overflow-hidden`}
+            className="h-full rounded-full relative overflow-hidden"
+            style={{ background: skill.color }}
           >
-            {/* Animated Shine Effect */}
-            <motion.div
-              initial={{ x: "-100%" }}
-              animate={{ x: "100%" }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                repeatDelay: 3,
-                ease: "easeInOut"
-              }}
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12"
-            />
           </motion.div>
         </div>
         
-        {/* Glow Effect */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, delay: index * 0.1 + 0.8 }}
-          viewport={{ once: true }}
-          className={`absolute inset-0 h-3 bg-gradient-to-r ${skill.color} rounded-full blur-sm opacity-50`}
-          style={{ width: `${skill.level}%` }}
-        />
       </div>
     </motion.div>
   )

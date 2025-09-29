@@ -6,14 +6,14 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const skillsData = [
-  { name: "Move", level: 100, color: "from-[#FF0040] to-[#FF4500]" },
-  { name: "TypeScript / JavaScript", level: 95, color: "from-[#FF4500] to-[#FFFF00]" },
-  { name: "React / Next.js", level: 95, color: "from-[#FFFF00] to-[#00FF41]" },
-  { name: "Solidity", level: 90, color: "from-[#00FF41] to-[#00FFFF]" },
-  { name: "UI/UX", level: 90, color: "from-[#00FFFF] to-[#0080FF]" },
-  { name: "Rust", level: 85, color: "from-[#0080FF] to-[#4000FF]" },
-  { name: "Game Dev", level: 80, color: "from-[#4000FF] to-[#8000FF]" },
-  { name: "AI for Web3", level: 75, color: "from-[#8000FF] to-[#FF0080]" },
+  { name: "Move", level: 100, color: "linear-gradient(to right, #ef4444, #f97316)" },
+  { name: "TypeScript / JavaScript", level: 95, color: "linear-gradient(to right, #f97316, #eab308)" },
+  { name: "React / Next.js", level: 95, color: "linear-gradient(to right, #eab308, #22c55e)" },
+  { name: "Solidity", level: 90, color: "linear-gradient(to right, #22c55e, #06b6d4)" },
+  { name: "UI/UX", level: 90, color: "linear-gradient(to right, #06b6d4, #3b82f6)" },
+  { name: "Rust", level: 85, color: "linear-gradient(to right, #3b82f6, #6366f1)" },
+  { name: "Game Dev", level: 80, color: "linear-gradient(to right, #6366f1, #a855f7)" },
+  { name: "AI for Web3", level: 75, color: "linear-gradient(to right, #a855f7, #ec4899)" },
 ]
 
 export const projectsData = [
