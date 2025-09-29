@@ -68,9 +68,32 @@ export const About = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Left Column - Professional Summary */}
+          {/* Left Column - Profile Picture */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="flex justify-center lg:justify-start"
+          >
+            <div className="relative">
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-neon-blue/30 shadow-2xl">
+                <img 
+                  src="https://github.com/linkln33.png" 
+                  alt="Georg Links - Full Stack Web3 Developer"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Glow effect */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-neon-blue/20 via-neon-green/20 to-neon-pink/20 blur-xl scale-110 -z-10"></div>
+              {/* Status indicator */}
+              <div className="absolute bottom-4 right-4 w-6 h-6 bg-neon-green rounded-full border-4 border-background animate-pulse"></div>
+            </div>
+          </motion.div>
+
+          {/* Right Column - Professional Summary */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
@@ -121,15 +144,20 @@ export const About = () => {
               </div>
             </div>
           </motion.div>
+        </div>
 
-          {/* Right Column - Highlights */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
+        {/* Highlights Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <h3 className="text-2xl font-semibold mb-8 text-center text-neon-purple">
+            What I Do Best
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {highlights.map((highlight, index) => (
               <motion.div
                 key={highlight.title}
@@ -138,17 +166,17 @@ export const About = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="card-hover group">
+                <Card className="card-hover group h-full">
                   <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      <div className={`p-3 rounded-lg bg-card border border-current/20 group-hover:scale-110 transition-transform ${highlight.color}`}>
-                        <highlight.icon className="w-6 h-6" />
+                    <div className="flex flex-col items-center text-center space-y-4">
+                      <div className={`p-4 rounded-lg bg-card border border-current/20 group-hover:scale-110 transition-transform ${highlight.color}`}>
+                        <highlight.icon className="w-8 h-8" />
                       </div>
                       <div className="space-y-2">
                         <h4 className="text-lg font-semibold text-foreground">
                           {highlight.title}
                         </h4>
-                        <p className="text-muted-foreground">
+                        <p className="text-muted-foreground text-sm">
                           {highlight.description}
                         </p>
                       </div>
@@ -157,8 +185,8 @@ export const About = () => {
                 </Card>
               </motion.div>
             ))}
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
 
         {/* Achievements Section */}
         <motion.div
