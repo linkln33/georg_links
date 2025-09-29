@@ -68,23 +68,12 @@ export const Hero = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="space-y-1"
             >
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-neon-blue/50 shadow-lg">
-                  <img 
-                    src="https://github.com/linkln33.png" 
-                    alt="Georg Links"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <p className="text-neon-green text-base sm:text-lg font-medium">
-                    👋 Hello, I&apos;m
-                  </p>
-                  <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-green bg-clip-text text-transparent leading-tight lg:leading-relaxed py-1 lg:py-2">
-                    Georg Links
-                  </h1>
-                </div>
-              </div>
+              <p className="text-neon-green text-base sm:text-lg font-medium">
+                👋 Hello, I&apos;m
+              </p>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-green bg-clip-text text-transparent leading-tight lg:leading-relaxed py-1 lg:py-2">
+                Georg Links
+              </h1>
               <div className="mt-8 lg:mt-16">
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-neon-purple">
                   Full Stack Web3 Developer
