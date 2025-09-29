@@ -69,7 +69,7 @@ export const Hero = () => {
               className="space-y-1"
             >
               <p className="text-neon-green text-base sm:text-lg font-medium">
-                👋 Hello, I'm
+                👋 Hello, I&apos;m
               </p>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-green bg-clip-text text-transparent leading-tight lg:leading-relaxed py-1 lg:py-2">
                 Georg Links
