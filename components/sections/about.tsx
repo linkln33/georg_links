@@ -68,32 +68,9 @@ export const About = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Left Column - Profile Picture */}
+          {/* Left Column - Professional Summary */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="flex justify-center lg:justify-start"
-          >
-            <div className="relative">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-neon-blue/30 shadow-2xl">
-                <img 
-                  src="https://github.com/linkln33.png" 
-                  alt="Georg Links - Full Stack Web3 Developer"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Glow effect */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-neon-blue/20 via-neon-green/20 to-neon-pink/20 blur-xl scale-110 -z-10"></div>
-              {/* Status indicator */}
-              <div className="absolute bottom-4 right-4 w-6 h-6 bg-neon-green rounded-full border-4 border-background animate-pulse"></div>
-            </div>
-          </motion.div>
-
-          {/* Right Column - Professional Summary */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}

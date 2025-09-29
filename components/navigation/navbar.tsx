@@ -52,8 +52,12 @@ export const Navbar = () => {
               className="flex items-center gap-2 cursor-pointer"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-neon-blue to-neon-green flex items-center justify-center">
-                <Code className="w-5 h-5 text-black" />
+              <div className="w-8 h-8 rounded-full overflow-hidden border border-neon-blue/50">
+                <img 
+                  src="https://github.com/linkln33.png" 
+                  alt="Georg Links"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-neon-blue to-neon-green bg-clip-text text-transparent">
                 Georg Links
