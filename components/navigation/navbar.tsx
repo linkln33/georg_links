@@ -54,7 +54,7 @@ export const Navbar = () => {
     >
       <div className="w-10 h-10 flex items-center justify-center">
         <img
-          src="/logo.png"
+          src="/george1.space.logo.png"
           alt="Georg Links"
           className="w-full h-full object-contain"
         />
