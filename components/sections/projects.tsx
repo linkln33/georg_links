@@ -31,16 +31,25 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className={`group ${project.featured ? 'lg:col-span-2' : ''}`}
+      className="group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <Card className="card-hover h-full overflow-hidden">
         {/* Project Image */}
         <div className="relative overflow-hidden">
-          <div className={`${project.featured ? 'h-64' : 'h-48'} bg-gradient-to-br from-neon-blue/20 via-neon-purple/20 to-neon-pink/20 flex items-center justify-center relative`}>
-            {/* Placeholder for project image */}
-            <div className="text-6xl opacity-50">{project.featured ? '🚀' : '💎'}</div>
+          <div className="h-64 relative">
+            {project.image && project.image !== '/api/placeholder/400/250' ? (
+              <img 
+                src={project.image} 
+                alt={project.title}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div className="w-full h-full bg-gradient-to-br from-neon-blue/20 via-neon-purple/20 to-neon-pink/20 flex items-center justify-center">
+                <div className="text-6xl opacity-50">{project.featured ? '🚀' : '💎'}</div>
+              </div>
+            )}
             
             {/* Overlay on hover */}
             <motion.div
@@ -73,6 +82,22 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
               </Button>
             </motion.div>
 
+            {/* Custom Blockchain Badge */}
+            {project.id === 1 && (
+              <div className="absolute top-4 left-4">
+                <Badge className="bg-blue-600 text-white font-semibold">
+                  Sui Blockchain
+                </Badge>
+              </div>
+            )}
+            {project.id === 2 && (
+              <div className="absolute top-4 left-4">
+                <Badge className="bg-gradient-to-r from-purple-500 to-teal-500 text-white font-semibold">
+                  Solana
+                </Badge>
+              </div>
+            )}
+
             {/* Featured Badge */}
             {project.featured && (
               <div className="absolute top-4 right-4">
@@ -85,14 +110,14 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           </div>
         </div>
 
-        <CardHeader className="pb-4">
-          <CardTitle className="text-xl group-hover:text-neon-cyan transition-colors">
+        <CardHeader className="pb-1">
+          <CardTitle className="text-base group-hover:text-neon-cyan transition-colors">
             {project.title}
           </CardTitle>
         </CardHeader>
 
-        <CardContent className="space-y-4">
-          <p className="text-muted-foreground leading-relaxed">
+        <CardContent className="space-y-2">
+          <p className="text-muted-foreground leading-snug text-xs">
             {project.description}
           </p>
 
@@ -110,7 +135,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           </div>
 
           {/* Project Links - Always visible on mobile */}
-          <div className="flex gap-3 pt-2 lg:opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="flex gap-2 pt-0 lg:opacity-0 group-hover:opacity-100 transition-opacity">
             <Button
               variant="ghost"
               size="sm"
@@ -186,7 +211,7 @@ export const Projects = () => {
         {/* Projects Grid */}
         <motion.div 
           layout
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid md:grid-cols-2 gap-8"
         >
           {filteredProjects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
@@ -215,7 +240,7 @@ export const Projects = () => {
               className="group"
             >
               <a 
-                href="https://github.com/georglinks" 
+                href="https://github.com/linkln33" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

@@ -50,7 +50,7 @@ const achievements = [
 
 export const About = () => {
   return (
-    <section id="about" className="pt-16 lg:pt-20 pb-20 relative">
+    <section id="about" className="pt-8 lg:pt-12 pb-20 relative">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

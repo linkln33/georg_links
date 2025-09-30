@@ -48,7 +48,7 @@ export const Hero = () => {
   }
 
   return (
-    <section className="min-h-[85vh] lg:h-[85vh] relative flex items-center justify-center overflow-hidden pt-20 lg:pt-0">
+    <section className="min-h-[75vh] lg:h-[75vh] relative flex items-center justify-center overflow-hidden pt-20 lg:pt-0">
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-background/20 via-background/10 to-slate-900/20 z-10" />
 
@@ -68,14 +68,14 @@ export const Hero = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="space-y-1"
             >
-              <p className="text-neon-green text-base sm:text-lg font-medium">
+              <p className="text-neon-green text-lg sm:text-xl font-medium">
                 👋 Hello, I&apos;m
               </p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-green bg-clip-text text-transparent leading-tight lg:leading-relaxed py-1 lg:py-2">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-green bg-clip-text text-transparent leading-tight lg:leading-relaxed py-1 lg:py-2">
                 Georg Links
               </h1>
               <div className="mt-8 lg:mt-16">
-                <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-neon-purple">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-neon-purple">
                   Full Stack Web3 Developer
                 </h2>
               </div>
@@ -86,7 +86,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg mx-auto lg:mx-0"
+              className="text-lg sm:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-lg mx-auto lg:mx-0"
             >
               5+ years building{" "}
               <span className="text-neon-cyan font-semibold">decentralized apps</span>,{" "}
@@ -130,16 +130,16 @@ export const Hero = () => {
               className="flex flex-wrap gap-6 lg:gap-8 justify-center lg:justify-start"
             >
               <div className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-neon-green">5+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Years Experience</div>
+                <div className="text-2xl sm:text-3xl font-bold text-neon-green">5+</div>
+                <div className="text-sm sm:text-base text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-neon-blue">50+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Projects Built</div>
+                <div className="text-2xl sm:text-3xl font-bold text-neon-blue">50+</div>
+                <div className="text-sm sm:text-base text-muted-foreground">Projects Built</div>
               </div>
               <div className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-neon-pink">10+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground">Technologies</div>
+                <div className="text-2xl sm:text-3xl font-bold text-neon-pink">10+</div>
+                <div className="text-sm sm:text-base text-muted-foreground">Technologies</div>
               </div>
             </motion.div>
           </motion.div>
@@ -151,7 +151,7 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative mt-8 lg:mt-0"
           >
-            <div className="terminal p-4 sm:p-6 relative overflow-hidden min-w-[300px] w-full max-w-[500px]">
+            <div className="terminal p-5 sm:p-7 relative overflow-hidden min-w-[360px] w-full max-w-[600px]">
               {/* Terminal Header */}
               <div className="flex items-center gap-2 mb-4 pb-3 border-b border-neon-blue/20">
                 <div className="flex gap-2">
@@ -168,7 +168,7 @@ export const Hero = () => {
               </div>
 
               {/* Code Content */}
-              <div className="font-mono text-xs sm:text-sm leading-relaxed">
+              <div className="font-mono text-sm sm:text-base leading-relaxed">
                 <pre className="text-gray-300">
                   <code dangerouslySetInnerHTML={{
                     __html: displayedCode

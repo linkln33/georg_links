@@ -158,36 +158,49 @@ export const Skills = () => {
               </Card>
             </div>
 
-            {/* Certification Badges */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              viewport={{ once: true }}
-              className="mt-8"
-            >
-              <h4 className="text-lg font-semibold mb-4 text-foreground">
-                Certifications & Recognition
-              </h4>
-              <div className="flex flex-wrap gap-3">
-                {[
-                  "Certified Solidity Developer",
-                  "Move Language Specialist", 
-                  "AWS Solutions Architect",
-                  "React Expert Certification"
-                ].map((cert) => (
-                  <motion.div
-                    key={cert}
-                    whileHover={{ scale: 1.05 }}
-                    className="px-3 py-2 bg-gradient-to-r from-neon-blue/20 to-neon-purple/20 border border-neon-blue/30 rounded-lg text-sm font-medium text-neon-blue hover:border-neon-cyan/50 transition-colors"
-                  >
-                    {cert}
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
           </motion.div>
         </div>
+
+        {/* Certifications & Recognition - Full Width */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="mt-16"
+        >
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-semibold mb-4 text-neon-purple">
+              Certifications & Recognition
+            </h3>
+            <p className="text-muted-foreground">
+              Professional certifications and industry recognition
+            </p>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-4">
+            {[
+              "Certified Solidity Developer",
+              "Move Language Specialist", 
+              "AWS Solutions Architect",
+              "React Expert Certification",
+              "Blockchain Security Expert",
+              "DeFi Protocol Specialist"
+            ].map((cert, index) => (
+              <motion.div
+                key={cert}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="px-4 py-3 bg-gradient-to-r from-neon-blue/20 to-neon-purple/20 border border-neon-blue/30 rounded-lg text-sm font-medium text-neon-blue hover:border-neon-cyan/50 hover:bg-gradient-to-r hover:from-neon-cyan/20 hover:to-neon-purple/20 transition-all duration-300"
+              >
+                {cert}
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   )
