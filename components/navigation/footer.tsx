@@ -50,19 +50,21 @@ export const Footer = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="space-y-4"
+              className="space-y-2"
             >
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 flex items-center justify-center">
+              <div className="flex items-center justify-start -my-12 -mt-20" style={{ background: 'transparent' }}>
+                <div className="w-48 h-48 flex items-center justify-center" style={{ background: 'transparent' }}>
                   <img
-                    src="/george1.space.logo.png"
+                    src="/george1.space.logo.jpg"
                     alt="Georg Links"
                     className="w-full h-full object-contain"
+                    style={{ 
+                      background: 'transparent !important',
+                      backgroundColor: 'transparent !important',
+                      backgroundImage: 'none !important'
+                    }}
                   />
                 </div>
-                <span className="text-xl font-bold bg-gradient-to-r from-neon-blue to-neon-green bg-clip-text text-transparent">
-                  Georg Links
-                </span>
               </div>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Full Stack Web3 Developer specializing in smart contracts, 

@@ -52,16 +52,18 @@ export const Navbar = () => {
       className="flex items-center gap-3 cursor-pointer"
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
     >
-      <div className="w-10 h-10 flex items-center justify-center">
+      <div className="w-32 h-32 flex items-center justify-center" style={{ background: 'transparent' }}>
         <img
-          src="/george1.space.logo.png"
+          src="/george1.space.logo.jpg"
           alt="Georg Links"
           className="w-full h-full object-contain"
+          style={{ 
+            background: 'transparent !important',
+            backgroundColor: 'transparent !important',
+            backgroundImage: 'none !important'
+          }}
         />
       </div>
-      <span className="text-xl font-bold bg-gradient-to-r from-neon-blue to-neon-green bg-clip-text text-transparent">
-        Georg Links
-      </span>
     </motion.div>
 
             {/* Desktop Navigation */}
