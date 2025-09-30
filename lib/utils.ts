@@ -49,6 +49,26 @@ export const projectsData = [
   },
   {
     id: 4,
+    title: "Nova - Modern Web Platform",
+    description: "A cutting-edge web platform featuring modern design, responsive layouts, and advanced functionality. Built with the latest technologies for optimal performance and user experience.",
+    image: "/nova.png",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel"],
+    github: "https://github.com/linkln33/nova",
+    demo: "https://nova-bg.netlify.app",
+    featured: true
+  },
+  {
+    id: 5,
+    title: "Soul Links - Spiritual Connection Platform",
+    description: "A spiritual and wellness platform designed to connect like-minded individuals through meaningful experiences, meditation, and personal growth journeys.",
+    image: "/soul-links.png",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Netlify"],
+    github: "https://github.com/linkln33/soul-links",
+    demo: "https://soul-links.netlify.app",
+    featured: true
+  },
+  {
+    id: 6,
     title: "Brander - AI-Powered Branding Platform",
     description: "Advanced branding and design platform powered by AI to help businesses create compelling visual identities, logos, and marketing materials.",
     image: "/brander.png",
@@ -57,46 +77,6 @@ export const projectsData = [
     demo: "https://brander.netlify.app",
     featured: true
   },
-  {
-    id: 5,
-    title: "DeFi Yield Farming Protocol",
-    description: "A decentralized yield farming platform built with Solidity smart contracts, featuring automated liquidity provision and reward distribution.",
-    image: "/api/placeholder/400/250",
-    tech: ["Solidity", "React", "Web3.js", "Hardhat", "TypeScript"],
-    github: "https://github.com/linkln33/defi-yield-farm",
-    demo: "https://defi-yield-farm.vercel.app",
-    featured: false
-  },
-  {
-    id: 6,
-    title: "Move-based Gaming Platform",
-    description: "A blockchain gaming ecosystem using Move language for secure in-game asset management and player-owned economies.",
-    image: "/api/placeholder/400/250",
-    tech: ["Move", "Sui", "React", "Next.js", "Rust"],
-    github: "https://github.com/linkln33/move-gaming",
-    demo: "https://move-gaming.vercel.app",
-    featured: false
-  },
-  {
-    id: 7,
-    title: "AI-Powered Portfolio Optimizer",
-    description: "Machine learning algorithms integrated with blockchain data to optimize DeFi portfolio allocations and risk management.",
-    image: "/api/placeholder/400/250",
-    tech: ["Python", "TensorFlow", "Solidity", "React", "FastAPI"],
-    github: "https://github.com/linkln33/ai-portfolio",
-    demo: "https://ai-portfolio.vercel.app",
-    featured: false
-  },
-  {
-    id: 8,
-    title: "Rust-based DEX Aggregator",
-    description: "High-performance decentralized exchange aggregator built with Rust for optimal trade execution across multiple DEXs.",
-    image: "/api/placeholder/400/250",
-    tech: ["Rust", "Solana", "React", "TypeScript", "WebAssembly"],
-    github: "https://github.com/linkln33/rust-dex",
-    demo: "https://rust-dex.vercel.app",
-    featured: false
-  }
 ]
 
 export const socialLinks = [

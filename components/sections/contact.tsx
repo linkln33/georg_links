@@ -116,7 +116,7 @@ export const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-12 lg:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 bg-gradient-to-r from-neon-cyan to-neon-pink bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6 bg-gradient-to-r from-neon-cyan to-neon-pink bg-clip-text text-transparent leading-relaxed py-2">
             Let&apos;s Build Together
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
