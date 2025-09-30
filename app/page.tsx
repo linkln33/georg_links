@@ -8,10 +8,19 @@ import { Skills } from "@/components/sections/skills"
 import { Projects } from "@/components/sections/projects"
 import { Contact } from "@/components/sections/contact"
 import { GlobalBackground } from "@/components/background/global-background"
+import { structuredData } from "@/components/seo/structured-data"
 
 export default function Home() {
   return (
     <main className="min-h-screen relative">
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
+      
       {/* Global animated background for entire page */}
       <GlobalBackground variant="nebula" density="medium" />
       
