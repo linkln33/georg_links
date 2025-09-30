@@ -299,15 +299,15 @@ export const Contact = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0 flex-1 flex flex-col">
-                  <div className="space-y-6 flex-1 flex flex-col">
+                  <div className="space-y-4 flex-1 flex flex-col">
                     <div className="text-center">
-                      <div className="flex items-center justify-center gap-2 mb-4">
+                      <div className="flex items-center justify-center gap-2 mb-3">
                         <div className="w-3 h-3 bg-neon-green rounded-full animate-pulse"></div>
                         <Badge className="bg-gradient-to-r from-neon-green to-neon-cyan text-black font-semibold">
                           Available for New Projects
                         </Badge>
                       </div>
-                      <p className="text-sm text-muted-foreground mb-4">
+                      <p className="text-sm text-muted-foreground mb-3">
                         Ready to discuss your Web3 project? Let&apos;s schedule a discovery call to explore how I can help bring your vision to life.
                       </p>
                     </div>
@@ -315,7 +315,7 @@ export const Contact = () => {
                     <div className="space-y-4">
                       <div className="text-center">
                         <h4 className="font-semibold text-foreground mb-2">30-Minute Discovery Call</h4>
-                        <p className="text-sm text-muted-foreground mb-4">
+                        <p className="text-sm text-muted-foreground mb-3">
                           Free consultation to understand your project requirements and discuss potential solutions.
                         </p>
                       </div>
@@ -334,6 +334,14 @@ export const Contact = () => {
                           <div className="text-sm">
                             <div className="font-medium">Location</div>
                             <div className="text-xs text-muted-foreground">San Francisco, CA</div>
+                          </div>
+                        </div>
+                        
+                        <div className="flex items-center gap-3 p-3 rounded-lg bg-card border border-neon-purple/20">
+                          <Calendar className="w-4 h-4 text-neon-purple" />
+                          <div className="text-sm">
+                            <div className="font-medium">Availability</div>
+                            <div className="text-xs text-muted-foreground">Monday - Friday, 9 AM - 6 PM PST</div>
                           </div>
                         </div>
                       </div>
