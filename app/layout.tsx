@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'Georg Links' }],
   robots: 'index, follow',
   icons: {
-    icon: '/logo.png',
-    shortcut: '/logo.png',
-    apple: '/logo.png',
+    icon: '/geo-favi.png',
+    shortcut: '/geo-favi.png',
+    apple: '/geo-favi.png',
   },
   openGraph: {
     type: 'website',

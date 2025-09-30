@@ -72,7 +72,7 @@ export const Hero = () => {
                 👋 Hello, I&apos;m
               </p>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-green bg-clip-text text-transparent leading-tight lg:leading-relaxed py-1 lg:py-2">
-                Georg Links
+                George
               </h1>
               <div className="mt-8 lg:mt-16">
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-neon-purple">
