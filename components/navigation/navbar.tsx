@@ -45,24 +45,24 @@ export const Navbar = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="flex items-center gap-2 cursor-pointer"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            >
-              <div className="w-8 h-8 rounded-full overflow-hidden border border-neon-blue/50">
-                <img 
-                  src="https://github.com/linkln33.png" 
-                  alt="Georg Links"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-neon-blue to-neon-green bg-clip-text text-transparent">
-                Georg Links
-              </span>
-            </motion.div>
+    <motion.div
+      initial={{ opacity: 0, x: -20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      className="flex items-center gap-3 cursor-pointer"
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    >
+      <div className="w-10 h-10 flex items-center justify-center">
+        <img
+          src="/logo.png"
+          alt="Georg Links"
+          className="w-full h-full object-contain"
+        />
+      </div>
+      <span className="text-xl font-bold bg-gradient-to-r from-neon-blue to-neon-green bg-clip-text text-transparent">
+        Georg Links
+      </span>
+    </motion.div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">

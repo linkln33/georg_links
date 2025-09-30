@@ -52,9 +52,13 @@ export const Footer = () => {
               viewport={{ once: true }}
               className="space-y-4"
             >
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-neon-blue to-neon-green flex items-center justify-center">
-                  <Code className="w-5 h-5 text-black" />
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <img
+                    src="/logo.png"
+                    alt="Georg Links"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <span className="text-xl font-bold bg-gradient-to-r from-neon-blue to-neon-green bg-clip-text text-transparent">
                   Georg Links

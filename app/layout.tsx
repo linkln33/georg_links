@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'Georg Links' }],
   robots: 'index, follow',
   icons: {
-    icon: 'https://github.com/linkln33.png',
-    shortcut: 'https://github.com/linkln33.png',
-    apple: 'https://github.com/linkln33.png',
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
   },
   openGraph: {
     type: 'website',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'Georg Links Portfolio',
     images: [
       {
-        url: 'https://github.com/linkln33.png',
+        url: '/logo.png',
         width: 400,
         height: 400,
         alt: 'Georg Links - Full Stack Web3 Developer',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Georg Links - Full Stack Web3 Developer',
     description: '5+ years building decentralized apps, smart contracts, and modern UIs using Solidity, Rust, Move, and AI-powered solutions.',
-    images: ['https://github.com/linkln33.png'],
+    images: ['/logo.png'],
   },
 }
 
