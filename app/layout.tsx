@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     'George Links',
     'Web3 Portfolio'
   ],
-  authors: [{ name: 'George Links', url: 'https://georglinks.dev' }],
+  authors: [{ name: 'George Links', url: 'https://george1.space' }],
   creator: 'George Links',
   publisher: 'George Links',
   robots: {
@@ -51,13 +51,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://georglinks.dev',
+    url: 'https://george1.space',
     title: 'George - Full Stack Web3 Developer | Blockchain Expert',
     description: 'Expert Full Stack Web3 Developer with 5+ years experience in Solidity, Rust, Move, and blockchain technologies. Specializing in DeFi protocols, smart contracts, and AI-powered Web3 solutions.',
     siteName: 'George Links Portfolio',
     images: [
       {
-        url: '/george1.space.logo.jpg',
+        url: 'https://george1.space/george1.space.logo.jpg',
         width: 1200,
         height: 630,
         alt: 'George - Full Stack Web3 Developer',
@@ -68,11 +68,11 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'George - Full Stack Web3 Developer | Blockchain Expert',
     description: 'Expert Full Stack Web3 Developer with 5+ years experience in Solidity, Rust, Move, and blockchain technologies.',
-    images: ['/george1.space.logo.jpg'],
+    images: ['https://george1.space/george1.space.logo.jpg'],
     creator: '@georgelinks',
   },
   alternates: {
-    canonical: 'https://georglinks.dev',
+    canonical: 'https://george1.space',
   },
   category: 'technology',
 }

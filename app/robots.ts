@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://georglinks.dev/sitemap.xml',
+    sitemap: 'https://george1.space/sitemap.xml',
   }
 }

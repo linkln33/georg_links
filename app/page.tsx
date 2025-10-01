@@ -9,10 +9,14 @@ import { Projects } from "@/components/sections/projects"
 import { Contact } from "@/components/sections/contact"
 import { GlobalBackground } from "@/components/background/global-background"
 import { structuredData } from "@/components/seo/structured-data"
+import CustomHead from "@/components/seo/custom-head"
 
 export default function Home() {
   return (
     <main className="min-h-screen relative">
+      {/* Custom Head for additional meta tags */}
+      <CustomHead />
+      
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"
